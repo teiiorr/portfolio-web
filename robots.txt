@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://teiiorr.github.io/portfolio-web/sitemap.xml
+Sitemap: https://teiior.uz/sitemap.xml
