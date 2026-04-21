@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7cbf06dc48.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="logo"><span>t</span>eiior.</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p class="p1">Full-Stack Developer</p>
+                <h1>Hi, I'm <br> <span>Bakhtiyor</span><br>Murodkhojaev</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/40.jpg" alt="404">
+
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>My name is Bakhtiyor, and I am a talented developer with a passion for creating innovative
+                        solutions. With a strong background in backend development, website development, and mobile app
+                        development, I am constantly exploring new technologies and staying up to date with industry
+                        trends.
+
+                        Currently, I am pursuing my Bachelor's degree in Information Technology with a specialization in
+                        software development at PDP University. This program has equipped me with a solid foundation in
+                        computer science principles, programming languages, and software engineering methodologies. My
+                        commitment to learning and growing as a developer drives me to continuously expand my knowledge
+                        and seek new challenges. I am dedicated to delivering high-quality results and exceeding client
+                        expectations.</p>
+
+                    <div class="tab-titles">
+                        <div class="tab-links">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        </div>
+                        <div class="tab-links">
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-links">
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        </div>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Website Development</span><br> Creating prototypes and building
+                                high-quality,responsive websites.</li>
+                            <li><span>Software Development</span> <br> Developing well-designed and structured
+                                backend
+                                solutions for projects.</li>
+                            <li><span>Mobile App Development</span> <br> Developing mobile applications using
+                                Flutter
+                                and Dart.</li>
+                        </ul>
+                    </div>
+                    <!-- Education -->
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020-2021</span> <br> I am a graduate of PDP Academy's C++ and Java courses.</li>
+                            <ul>
+                                <li>
+                                    <span>2021-2022</span>
+                                    <br>
+                                    I have successfully completed the following courses by Zaur Tregulov on Udemy:
+                                    <ul>
+                                        <li>"Java - Road to Oracle Certification"</li>
+                                        <li>"Java - Black Belt"</li>
+                                        <li>"SQL Course"</li>
+                                        <li>"Spring Boot"</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <li><span>from 2023 onwards</span> <br> Currently pursuing a Bachelor's Degree in Education
+                                from <span>PDP
+                                    University</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Experience -->
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022-2023</span><br>Freelance</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services-->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Website development</h2>
+                    <p>Are you looking for a captivating and user-friendly website? Look no further! With my expertise
+                        in HTML, CSS, and vanilla JavaScript, I have the skills to bring your ideas to life on the web.
+                        I specialize in creating responsive and interactive websites that engage your audience and
+                        provide an exceptional user experience. Whether you need a static website, a dynamic web
+                        application, or an e-commerce platform, I have the knowledge and creativity to deliver a
+                        polished and professional product.</p>
+                    <a href="#contact">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Backend development</h2>
+                    <p>Behind every great website, there is a backend that powers its functionality. As a skilled
+                        backend developer, I am proficient in Java Spring Boot and SQL, allowing me to build scalable
+                        and efficient server-side solutions. Additionally, I have experience in C++ and C# .NET,
+                        enabling me to work with a wide range of technologies and frameworks. I am passionate about
+                        developing innovative solutions that optimize performance and ensure seamless data management.
+                        By leveraging my expertise, I can create reliable and secure backend systems tailored to your
+                        specific needs.</p>
+                    <a href="#contact">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>Mobile App</h2>
+                    <p>In today's mobile-centric world, having a presence on smartphones is crucial. With my expertise
+                        in Flutter and Dart, I can create cross-platform mobile applications that run seamlessly on both
+                        iOS and Android devices. Whether you need a simple utility app or a feature-rich mobile
+                        solution, I have the knowledge and skills to transform your ideas into engaging mobile
+                        experiences. From intuitive user interfaces to efficient data handling, I ensure that your
+                        mobile app is both visually appealing and highly functional.
+                    </p>
+                    <a href="#contact">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------portfolio----------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/mywork1.jpg" alt="404">
+                    <div class="layer">
+                        <h3>Scuba Diving Website</h3>
+                        <p>Experience the underwater world through our responsive scuba diving website with dynamic
+                            navigation, captivating service icons, stunning gallery, and easy contact information.</p>
+                        <a target="_blank" href="https://scubamax2.netlify.app/"><i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/myworkk2.jpg" alt="404">
+                    <div class="layer">
+                        <h3>Portfolio Website</h3>
+                        <p>Bakhtiyor Murodkhojaev's portfolio website showcases his skills as a full-stack developer.
+                            With expertise in website development, software development, and mobile app development, he
+                            creates innovative solutions. Explore his work, services, and contact information for
+                            collaboration opportunities</p>
+                        <a target="_blank" href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/myworkk3.jpg" alt="404">
+                    <div class="layer">
+                        <h3>Travel Website</h3>
+                        <p>Responsive and visually stunning website for travel enthusiasts. This multi-page website
+                            offers various services and features, catering to the needs of travelers. It is designed to
+                            be user-friendly and adapts seamlessly across different devices.
+                        </p>
+                        <a target="_blank" href="https://travel-demo0.netlify.app/"><i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a target="_blank" href="https://travel-demo0.netlify.app/" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- -------------contact------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p> <i class="fas fa-paper-plane"></i> bakhadev13@gmail.com</p>
+                    <p> <i class="fas fa-phone-square-alt"></i> +998(90) 918-19-54</p>
+                    <div class="social-icons">
+                        <a target="_blank" href="https://www.facebook.com/baxtiyor.murodkhojaev"><i
+                                class="fab fa-facebook"></i></a>
+                        <a target="_blank" href="https://twitter.com/1teiior"><i class="fab fa-twitter-square"></i></a>
+                        <a target="_blank" href="https://instagram.com/teiior"><i class="fab fa-instagram"></i></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/bakhtiyor-murodkhojaev-92b279264/"><i
+                                class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Cv_pdf.pdf" download class="btn btn2">Download CV</a>
+                </div>
+
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © teiior. Made with <i class="fas fa-heart"></i> by Bakhtiyor Murodkhojaev</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemeu.style.right = "0";
+        }
+        function closemenu() {
+            sidemeu.style.right = "-200px";
+
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyPkG7nmNrbpxu1DTQLqlHYkB6K5mXwd6jvz14bwEhaSZZVJ1_ln2_ED9AB0qMqu3zgUQ/exec';
+        const form = document.forms['submit-to-google-sheet'];
+        const msg = document.getElementById("msg");
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully";
+                    setTimeout(function () {
+                        msg.innerHTML = "";
+                    }, 5000);
+                    form.reset();
+                })
+                .catch(error => {
+                    msg.innerHTML = "";
+                });
+        });
+    </script>
+
+    <!-- ---------------Inspect Disable--------------- -->
+    <script>
+        document.addEventListener("contextmenu", function (e) {
+            e.preventDefault();
+            document.onkeydown = function (e) {
+                if (event.keyCode == 123) {
+                    return false;
+                }
+                if (e.ctrlKey && e.shiftKey && e.keyCode == "I".charCodeAt(0)) {
+                    return false;
+                }
+                if (e.ctrlKey && e.shiftKey && e.keyCode == "C".charCodeAt(0)) {
+                    return false;
+                }
+                if (e.ctrlKey && e.shiftKey && e.keyCode == "X".charCodeAt(0)) {
+                    return false;
+                }    
+                if (e.ctrlKey && e.shiftKey && e.keyCode == "V".charCodeAt(0)) {
+                    return false;
+                }
+            };
+        });
+    </script>
+
+
+    <!-- -------------------------------END----------------------------------- -->
+
+</body>
+
+</html>
