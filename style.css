@@ -175,7 +175,7 @@ nav ul li a:hover::after {
 
 .tab-contents ul li span {
     color: #b54769;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .tab-contents {
@@ -236,6 +236,96 @@ nav ul li a:hover::after {
 
 #portfolio {
     padding: 50px 0;
+}
+
+.portfolio-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 32px;
+    margin-bottom: 50px;
+}
+
+.portfolio-kicker {
+    color: #ff8a5b;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 13px;
+    margin-bottom: 16px;
+}
+
+.portfolio-intro {
+    max-width: 460px;
+    color: #c7c7c7;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.project-card {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.18);
+}
+
+.project-content {
+    padding: 24px;
+    display: grid;
+    grid-template-rows: auto minmax(90px, auto) 1fr auto;
+    height: 100%;
+    justify-items: center;
+    text-align: center;
+}
+
+.project-tag {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 14px;
+    border-radius: 999px;
+    background: rgba(255, 138, 91, 0.12);
+    border: 1px solid rgba(255, 138, 91, 0.28);
+    color: #ffd5c5;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+}
+
+.project-content h3 {
+    font-size: 24px;
+    line-height: 1.2;
+    margin: 18px 0 14px;
+    color: #fff;
+    align-self: start;
+}
+
+.project-content p {
+    color: #d0d0d0;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.project-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 18px;
+    padding: 0;
+}
+
+.project-meta li {
+    list-style: none;
+    padding: 8px 12px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    color: #f0f0f0;
+    font-size: 13px;
 }
 
 .work-list {
@@ -302,6 +392,21 @@ nav ul li a:hover::after {
 
 .work:hover .layer {
     height: 100%;
+}
+
+@media only screen and (max-width: 900px) {
+    .portfolio-heading {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .portfolio-intro {
+        max-width: none;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 .btn {
@@ -669,7 +774,7 @@ nav ul li a:hover::after {
 
 .tab-contents ul li span {
     color: #b54769;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .tab-contents {
