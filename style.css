@@ -329,34 +329,19 @@ nav ul li a:hover::after {
 }
 
 .project-visit {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
+    display: inline-block;
     margin-top: 22px;
-    padding: 13px 24px;
-    border-radius: 999px;
-    border: 1px solid rgba(255, 209, 102, 0.55);
+    padding: 14px 50px;
+    border-radius: 6px;
+    border: 1px solid #ff004f;
     text-decoration: none;
-    font-size: 14px;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: #111;
-    background: linear-gradient(135deg, #ffd166, #ff8a5b);
-    box-shadow: 0 12px 30px rgba(255, 138, 91, 0.22);
-    transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+    color: #fff;
+    background: #ff004f;
+    transition: 0.5s;
 }
 
 .project-visit:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 16px 34px rgba(255, 138, 91, 0.28);
-    filter: brightness(1.03);
-}
-
-.project-visit span:last-child {
-    font-size: 16px;
-    line-height: 1;
+    background: #e60046;
 }
 
 .work-list {
